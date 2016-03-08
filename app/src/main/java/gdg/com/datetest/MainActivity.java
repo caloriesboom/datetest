@@ -13,13 +13,13 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
 
     private DatePicker datePicker;
-    private TimePicker timePicker;
+    //private TimePicker timePicker;
     private Calendar cal;
     private int year;
     private int month;
     private int day;
-    private int hour;
-    private int minute;
+    //private int hour;
+    //private int minute;
 
 
     @Override
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         day = cal.get(Calendar.DAY_OF_MONTH);
         //hour = cal.get(Calendar.HOUR_OF_DAY);
         // minute = cal.get(Calendar.MINUTE);
-        setTitle(year + "-" + month + "-" + day);
+        //setTitle(year + "-" + month + "-" + day);
         datePicker = (DatePicker) findViewById(R.id.datePicker1);
         //timePicker = (TimePicker) findViewById(R.id.timePicker1);
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDateChanged(DatePicker view, int year, int monthOfYear,
                                       int dayOfMonth) {
 // TODO Auto-generated method stub
-                setTitle(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
+                //setTitle(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
             }
         });
 
